@@ -1,0 +1,27 @@
+ALGORITHM  Insertion_sort(A)
+
+VAR
+    A: ARRAY_OF INTEGER;
+    i,j: INTEGER;
+
+BEGIN
+
+    FOR j FROM 1 TO A.length-1 DO
+        READ (A[i]);
+    END_FOR
+
+    FOR j FROM 1 TO A.length-1 DO
+        Key:=A[i];
+        i:=j-1;
+        WHILE (i>0 && A[i]>Key) DO
+            A[i+1]:=A[i];
+            i:=i-1;
+        END_WHILE
+        A[i+1]:=Key;
+    END_FOR
+    FOR j FROM 1 TO A.length-1 DO
+        WRITE(A[i]);
+    END_FOR
+
+
+END
